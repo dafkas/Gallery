@@ -24,3 +24,7 @@ Route::post('/creategallery', 'GalleryController@store');
 
 Route::get('/showGallery/{id}', 'GalleryController@showGallery');
 
+Route::get('/delete/{id}', 'GalleryController@delete');
+
+Route::post('/upload', 'ImageController@upload');
+

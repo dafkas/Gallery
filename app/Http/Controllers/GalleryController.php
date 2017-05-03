@@ -31,8 +31,10 @@ class GalleryController extends Controller
         return view ('gallery.gallery')->with('gallery', $gallery);
     }
 
-    public function delete()
+    public function delete($id)
     {
-
+        $gallery = gallery::find($id);
+        $gallery->delete();
+        return back();
     }
 }

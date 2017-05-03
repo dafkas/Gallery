@@ -7,14 +7,21 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Dashboard</div>
 
-                <div class="panel-body">
+                <div class="panel-body" style="margin-top: 0px;">
                  <h3>Galleries</h3>
-                @foreach($galleries as $gallery)
-                    <p><a href="showGallery/{{$gallery->id}}">{{$gallery->name}}</a></p>
-                @endforeach
+                <table>
+                    @foreach($galleries as $gallery)
+                        <tr>
+                            <td><a href="showGallery/{{$gallery->id}}">{{$gallery->name}}</a></td>
+                            <td class="delete"><a href="delete/{{$gallery->id}}">Delete</a></td>
+                        </tr>
+                    @endforeach
+                </table><p></p>
                 {{ Form::open(['action' => 'GalleryController@store']) }}
                   {{ Form::text('name') }}
-                  {{ Form::submit('Create new gallery', array('class' => 'btn btn-default'))}}
+                  <p><button type="submit" class="hvr-sweep-to-right" style="margin-left:0px;">
+                    Save
+                  </button></p>
                 {{ Form::close() }}
 
                

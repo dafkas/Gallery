@@ -81,7 +81,6 @@
                 <div class="title m-b-md">
                     Gallery
                 </div>
-
             </div>
         </div>
     </body>
