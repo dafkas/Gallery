@@ -12,10 +12,14 @@ class ImageController extends Controller
     public function upload(Request $request)
     {
         $galleryId = $request->input('galleryId');
-
         $file = new file;
         $fileUpload = $file->uploadImage($request);
         return response($fileUpload, 201);
 
+    }
+
+    public function showImages()
+    {
+        
     }
 }

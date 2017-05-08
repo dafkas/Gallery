@@ -66,9 +66,12 @@ a.navbar-brand {
 }
 
 /* Sweep To Right */
-button.hvr-sweep-to-right {
-    margin-left: 35px;
+.form-group{
+    button.hvr-sweep-to-right {
+        margin-left: 35px;
+    }
 }
+
 .hvr-sweep-to-right {
   display: inline-block;
   vertical-align: middle;
@@ -160,5 +163,18 @@ td a {
     &:hover
     {
         background-color:#f2dede;
+    }
+}
+
+
+
+.load-more{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    font-size:22px;
+    color:#636b6f;
+    text-align: center;
+    a{
+        color:#636b6f;
     }
 }

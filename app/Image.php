@@ -8,5 +8,4 @@ class Image extends Model
 {
     protected $guarded = array();
     //disable timestamps
-    public $timestamps = false;
 }
